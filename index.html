@@ -1,35 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <title>我的个人网站</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            line-height: 1.6;
-        }
-        h1 {
-            color: #2c3e50;
-        }
-        .container {
-            background-color: #f9f9f9;
-            padding: 30px;
-            border-radius: 10px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qiangbing-guo - 个人网站</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 引入图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <h1>欢迎来到我的网站！</h1>
-        <p>这是我的第一个个人网站，通过 GitHub Pages 创建。</p>
-        <p>我可以在之后随时更新内容！</p>
-        <ul>
-            <li>这是我的介绍</li>
-            <li>我的兴趣爱好</li>
-            <li>联系方式</li>
-        </ul>
-    </div>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">你的名字</div>
+            <ul class="nav-menu">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#projects">项目</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#education">教育</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 首页横幅 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="images/avatar.jpg" alt="头像" class="avatar">
+            <h1>你的名字</h1>
+            <p>你的职位/专业</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="mailto:你的邮箱"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>关于我</h2>
+            <p>这里写一段关于你自己的介绍。可以包括你的背景、兴趣、职业目标等。</p>
+            <p>例如：我是一名热爱技术的开发者，专注于前端开发和用户体验设计...</p>
+        </div>
+    </section>
+
+    <!-- 项目展示 -->
+    <section id="projects" class="section bg-light">
+        <div class="container">
+            <h2>我的项目</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>项目名称 1</h3>
+                <p>项目描述：这是一个很酷的项目，使用了哪些技术...</p>
+                <div class="project-links">
+                    <a href="#" class="btn">查看代码</a>
+                    <a href="#" class="btn">在线演示</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>项目名称 2</h3>
+                <p>项目描述：另一个有趣的项目...</p>
+                <div class="project-links">
+                    <a href="#" class="btn">查看代码</a>
+                </div>
+            </div>
+            <!-- 可以添加更多项目卡片 -->
+        </div>
+        </div>
+    </section>
+
+    <!-- 技能 -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>技能</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>编程语言</h3>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>HTML/CSS</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>框架与工具</h3>
+                    <ul>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 教育背景 -->
+    <section id="education" class="section bg-light">
+        <div class="container">
+            <h2>教育背景</h2>
+            <div class="education-item">
+                <h3>大学名称</h3>
+                <p>学位 | 专业 | 时间</p>
+                <p>相关课程或成就描述...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>联系我</h2>
+            <p>如果你有任何问题或合作机会，欢迎联系我！</p>
+            <div class="contact-links">
+                <a href="mailto:你的邮箱" class="contact-link">
+                    <i class="fas fa-envelope"></i>
+                    你的邮箱
+                </a>
+                <a href="https://github.com/你的用户名" class="contact-link">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <p>&copy; 2024 你的名字. 保留所有权利.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
